@@ -4,8 +4,8 @@ module.exports = {
     mailer: {
         service: 'Gmail',
         auth:{
-            user: 'anish18398@gmail.com',
-            pass:'RebelUnited'
+            user: 'USERNAME',
+            pass:'PASSWORD'
         }
        
     },
