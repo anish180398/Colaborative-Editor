@@ -34,8 +34,8 @@ router.route('/contact')
       });
     } else {
       var mailOptions = {
-        from: 'anish18398@gmail.com',
-        to: 'anish18398@gmail.com',
+        from: 'Code4Share <no-reply@code4share.com>',
+        to: 'demo.code4startup@gmail.com',
         subject: 'You got a new message from visitor 💋 😽',
         text: req.body.message
       };

@@ -1,10 +1,9 @@
 {
-  "name": "code4share",
+  "name": "Colabeditor",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js"
-    
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
