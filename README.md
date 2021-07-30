@@ -30,6 +30,5 @@ $ mongod
  - Update [username] and [passsword] for your gmail account in config.js 
  - Provide the Link for the mongodb connector
  
- 
-
+ ![alt text](HomeScreen.png)
 
