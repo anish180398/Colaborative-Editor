@@ -9,6 +9,6 @@ module.exports = {
         }
        
     },
-    dbConnstring: 'mongodb+srv://RebelUnited18:RebelUnited18@cluster0.md1gy.mongodb.net/colabeditor?retryWrites=true&w=majority',
+    dbConnstring: 'mongodb://localhost:27017/colabeditor',
     sessionKey: 'Colabeditor'
 }

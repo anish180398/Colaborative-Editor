@@ -7,16 +7,16 @@ var transporter = nodemailer.createTransport(config.mailer);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Code4Share - a platform for sharing code.' });
+  res.render('index', { title: 'ColabEditor.' });
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'Code4Share - a platform for sharing code.'});
+  res.render('about', { title: 'ColabEditor.'});
 });
 
 router.route('/contact')
   .get(function(req, res, next) {
-    res.render('contact', { title: 'Code4Share - a platform for sharing code.'});
+    res.render('contact', { title: 'ColabEditor.'});
   })
   .post(function(req, res, next) {
     req.checkBody('name', 'Empty name').notEmpty();
@@ -26,7 +26,7 @@ router.route('/contact')
 
     if(errors) {
       res.render('contact', {
-        title: 'Code4Share - a platform for sharing code.',
+        title: 'ColabEditor.',
         name: req.body.name,
         email: req.body.email,
         message: req.body.message,
@@ -34,9 +34,9 @@ router.route('/contact')
       });
     } else {
       var mailOptions = {
-        from: 'Code4Share <no-reply@code4share.com>',
-        to: 'demo.code4startup@gmail.com',
-        subject: 'You got a new message from visitor 💋 😽',
+        from: '', //add in ur credentials
+        to: '',
+        subject: 'You got a new message from visitor ',
         text: req.body.message
       };
 
@@ -44,7 +44,7 @@ router.route('/contact')
         if (error) {
           return console.log(error);
         }
-        res.render('thank', { title: 'Code4Share - a platform for sharing code.'});
+        res.render('thank', { title: 'ColabEditor.'});
       });
 
     }
